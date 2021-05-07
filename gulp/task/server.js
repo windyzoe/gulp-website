@@ -9,11 +9,9 @@ let proxyMiddleware = userConfig.proxyConfig.map(item=>{
 })
 
 gulp.task('server', function () {
-
     browserSync.init({
         server: "./dev",
         port: userConfig.port,
         middleware: proxyMiddleware
     });
-
 });

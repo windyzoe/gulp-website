@@ -1,5 +1,5 @@
 module.exports = {
-    a: function () {
-        console.log(567)
-    }
-}
+  a: function () {
+    console.log(567);
+  },
+};

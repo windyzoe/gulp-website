@@ -24,17 +24,16 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
-
 
 // List
 ul,
 li,
 ol {
-    list-style: none
+  list-style: none;
 }
 
 // Form
@@ -42,7 +41,7 @@ button,
 input,
 select,
 textarea {
-    margin: 0
+  margin: 0;
 }
 
 // Media
@@ -51,37 +50,38 @@ embed,
 object,
 audio,
 video {
-    height: auto;
-    max-width: 100%
+  height: auto;
+  max-width: 100%;
 }
 
 // Iframe
 iframe {
-    border: 0
+  border: 0;
 }
 
 // Table
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
 th {
-    padding: 0;
-    text-align: left
+  padding: 0;
+  text-align: left;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-button,input{
-    outline: none;
+button,
+input {
+  outline: none;
 }
 
 body {
-    width: 100%;
-    font-size: 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei',
+    'WenQuanYi Micro Hei', sans-serif;
 }
-

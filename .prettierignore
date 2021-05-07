@@ -1,0 +1,6 @@
+**/*.min.js
+src/static/**
+**/*.jpg
+**/*.jpeg
+**/*.svg
+**/*.ejs
