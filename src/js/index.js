@@ -1,15 +1,8 @@
-const moduleA = require('./moduleA');
-window.onload = function () {
-  $('#myDiv').html('3456');
-  moduleA.a();
-  $.ajax({
-    type: 'get',
-    url: '/exchangeApi/sto/rates',
-    data: {
-      assetCode: 'USDT',
-    },
-    success: function (res) {
-      console.log(res);
-    },
+$(function () {
+  $('#dropdownRoot01').on('mouseover', function (params) {
+    $('#dropdown01').dropdown('show');
   });
-};
+  $('#dropdownRoot01').on('mouseout', function (params) {
+    $('#dropdown01').dropdown('hide');
+  });
+});
