@@ -1,24 +1,22 @@
-基于gulp构建的官网项目脚手架
-
+###基于gulp构建的官网项目脚手架
 ---
-
 #### 项目简介
 
 1. 项目基于gulp、babel7构建
-2. 使用[ejs](https://ejs.bootcss.com/)开发静态页面，支持国际化开发
-3. js支持commenjs规范以及esm规范
-4. 使用sass预处理css，使用postcss处理浏览器后缀
+2. 使用[ejs](https://ejs.bootcss.com/)开发静态页面 ~~，支持国际化开发~~
+3. ~~js支持commenjs规范以及esm规范~~,JS使用传统方式开发
+4. 使用sass预处理css，使用postcss处理浏览器后缀,支持fontawesome图标包
 5. 使用browser-sync构建开发环境，使用http-proxy-middleware处理请求代理
 
 #### 如何运行
 
-1. 基本配置文件：复制user.config.js.config文件并改名为user.config.js
+1. 基本配置文件：user.config.js
 2. 安装依赖：执行npm install或者yarn
 3. 基本命令
 
 ```
 //开发环境
-npm start||npm run dev
+npm start
 //构建打包
 npm run build
 ```
@@ -26,10 +24,10 @@ npm run build
 #### 处理html
 
 - 添加html页面，以及打包配置
-1.  在/src/html/文件夹中添加对应页面
-2.  修改/gulp/task/html.js文件htmlConfig配置
+1. 在/src/html/文件夹中添加对应页面
+2. 通用的导航底部条已放入ejs中
 
-- 打包国际化页面
+- ~~打包国际化页面~~
 
 1. 在/src/lang/文件夹中添加对应语言文件
 2. 修改/gulp/task/html.js文件htmlConfig配置
@@ -38,12 +36,9 @@ npm run build
 #### 处理js
 
 - 添加js文件以及打包配置
-
 1. /src/js/文件夹中添加对应js入口文件
-2. 修改/gulp/task/js.js文件entries配置
 
 - html引入js文件
-
 1. 参照index.js文件引入方式，构建后会自动添加hash值
 2. 外部库引入，参照jquery文件的引入
 
@@ -52,7 +47,7 @@ npm run build
 - 添加scss文件以及引入css文件
 
 1. /src/css/文件夹中添加对应scss文件
-2. html中参照index.css文件引入方式
+2. html中参照index.scss文件引入方式
 
 #### 处理图片
 
@@ -79,18 +74,11 @@ npm run build
 │   │   │   └── footer.ejs
 │   │   └── index.html
 │   ├── imgs    //图片
-│   │   └── 123.jpeg
 │   ├── js  //js
-│   │   ├── index.js
-│   │   └── moduleA.js
 │   ├── lang    //国际化语言文件
 │   │   ├── en.json
 │   │   └── zh-cn.json
 │   ├── scss    //sass文件
-│   │   ├── common
-│   │   │   └── _reset.scss
-│   │   └── index.scss
 │   └── static  //静态文件
-│       └── jquery-3.2.1.min.js
-└── user.config.js.config   //开发配置文件
+└── user.config.js   //开发配置文件
 ```
